@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+select,
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+html {
+  font-family: Montserrat, sans-serif;
+  height: 100vh;
+  background: #F0F4FF;
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.action-area {
+  background: white;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.logo-area {
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+  align-self: flex-start;
+  justify-self: flex-start;
+  margin-top: 1em;
+  margin-left: 1em;
+  position: absolute;
+  top: 0;
+}
+
+.circle-logo {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(90deg, #0085FF, #001930);
+  border-radius: 9999px;
+}
+
+.text-logo {
+  font-size: 16px;
+  color: #001930;
+}
+
+.text-logo h3 {
+  font-weight: 600;
+}
+
+.form-area {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.text-container h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.text-container h4 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #262C40;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.email-inp,
+.psw-inp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.email-inp input,
+.psw-inp input {
+  font-family: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  border: 2px solid #1E2230;
+  padding: 1rem;
+  border-radius: 15px;
+  font-size: 1.1rem;
+}
+
+.email-inp label,
+.psw-inp label {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #131524;
+}
+
+.email-inp input:focus,
+.psw-inp input:focus {
+  border: 3px solid #1E2230;
+  color: #1E2230;
+}
+
+.email-inp input:invalid:focus,
+.psw-inp input:invalid:focus {
+  border: 3px solid #9F0000;
+  color: #9F0000;
+}
+
+.btm-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-inp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.checkbox-inp label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #131524;
+}
+
+.checkbox-inp input {
+  border: 2px solid #1E2230;
+  border-radius: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-inp input:checked {
+  background-color: #1E2230;
+}
+
+.btm-part a {
+  color: #0085FF;
+  text-decoration: none;
+}
+
+.btm-part a:hover {
+  text-decoration: underline;
+}
+
+form button {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: white;
+  background: linear-gradient(45deg, #3300FF, #006eff);
+}
+
+form button:hover {
+  cursor: pointer;
+  box-shadow: 0px 3px 10px rgba(51, 0, 255, 0.3);
+}
+
+.account {
+  display: flex;
+  align-self: center;
+  gap: 0.5em;
+}
+
+.account a {
+  color: #0085FF;
+  text-decoration: none;
+}
+
+.account a:hover {
+  text-decoration: underline;
+}
+
+.bg-area {
+  display: flex;
+  height: 100vh;
+  width: 50vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.shapes-cont {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.cube {
+  background: linear-gradient(135deg, #12BFE4, #05D2FF);
+  height: 200px;
+  width: 200px;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.circle {
+  background: linear-gradient(-45deg, #410290, #7000FF);
+  height: 220px;
+  width: 220px;
+  align-self: flex-end;
+  justify-self: flex-end;
+  border-radius: 999px;
+}
+
+.frosted-glass-cube {
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  top: 25%;
+  left: 25%;
+}/*# sourceMappingURL=sign-in.css.map */
